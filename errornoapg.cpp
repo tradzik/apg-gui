@@ -6,6 +6,7 @@ ErrorNoApg::ErrorNoApg(QWidget *parent) :
     ui(new Ui::ErrorNoApg)
 {
     ui->setupUi(this);
+
 }
 
 ErrorNoApg::~ErrorNoApg()
@@ -15,7 +16,7 @@ ErrorNoApg::~ErrorNoApg()
 
 void ErrorNoApg::on_pushButton_clicked()
 {
-    this->close();
+    std::exit(0);
 }
 
 void ErrorNoApg::on_ErrorNoApg_destroyed()

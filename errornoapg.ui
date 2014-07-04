@@ -63,14 +63,14 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>30</x>
      <y>40</y>
-     <width>341</width>
-     <height>18</height>
+     <width>371</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>Try to install it and then try again!</string>
+    <string>APG has to be located in /usr/bin directory</string>
    </property>
   </widget>
  </widget>

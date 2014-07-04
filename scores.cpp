@@ -27,6 +27,7 @@ Scores::Scores(QWidget *parent, int nk, int mk, int xk, int ak, QString modesk, 
     ui(new Ui::Scores)
 {
     ui->setupUi(this);
+
     ui->progressBar->setValue(5);
     n = nk;
     m = mk;

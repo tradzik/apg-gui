@@ -6,6 +6,7 @@ ErrorValDialog::ErrorValDialog(QWidget *parent) :
     ui(new Ui::ErrorValDialog)
 {
     ui->setupUi(this);
+
 }
 
 ErrorValDialog::~ErrorValDialog()

@@ -2,6 +2,7 @@
 #include "ui_apgmain.h"
 #include "stdlib.h"
 #include "QRegExp"
+#include "errornoapg.h"
 #include "errorvaldialog.h"
 #include "iostream"
 #include "string"
@@ -14,6 +15,21 @@ APGMain::APGMain(QWidget *parent) :
     ui(new Ui::APGMain)
 {
     ui->setupUi(this);
+    setWindowFlags(Qt::WindowStaysOnTopHint);
+        FILE *file;
+        if (file = fopen("/usr/bin/apg", "r"))
+        {
+            fclose(file);
+
+        }
+        else
+        {
+            ErrorNoApg *errnao = new ErrorNoApg(this);
+            ui->pushButton_2->setEnabled(false);
+            errnao->show();
+        }
+
+
     ui->lineEdit->setMaxLength(3);
     ui->lineEdit_2->setMaxLength(3);
     ui->lineEdit_3->setMaxLength(2);
